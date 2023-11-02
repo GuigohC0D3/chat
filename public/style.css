@@ -4,6 +4,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fde3a7d7;
 }
 
 * {
@@ -23,17 +24,29 @@ body {
 
 input {
   width: 600px;
-  border: 1px solid #ddd;
+  border: none;
+  border-radius: 10px;
   height: 50px;
   padding: 0 20px;
   font-size: 14px;
 }
 
+input:hover {
+  background-color: #fff;
+}
+
+input:focus-visible {
+  outline: 1px solid #6c63ff;
+}
+
 button {
+  border: none;
+  border-radius: 5px;
   width: 600px;
   height: 50px;
   font-size: 14px;
-  background: #069;
+  background: #6c63ff;
+  text-decoration: none;
   text-align: center;
   line-height: 50px;
   font-weight: bold;
@@ -42,10 +55,12 @@ button {
 }
 
 .messages {
+  background-color: #fff;
   width: 600px;
   height: 400px;
   margin: 20px 0;
-  border: 1px solid #ddd;
+  border: none;
+  border-radius: 10px;
   padding: 20px;
 }
 
